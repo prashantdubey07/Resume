@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Prashant Kumar Dubey
+%
+% Original repository:
+% https://github.com/prashantdubey07/Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{prashant-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Prashant Kumar}{Dubey}{ %\urlstyle{same}\url{http://debarghyadas.com} \\
+\href{mailto:prashantdubey194@gmail.com}{prashantdubey194@gmail.com}| +91-7411856093 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{TIT- Bhopal}
+\descript{BE in Computer Science}
+\location{June 2011 | Bhopal, M.P. (India) \\ Per: 66.5 / 100}
+\sectionsep
+
+
+\subsection{SSM Nirala Nagar| Rewa, M.P. (India)}
+\location{XII, MPBSE, May 2007 | 78.8\% }
+\location{X, MPBSE, May 2005 | 80.8\%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/prashantdubey07}{\custombold{prashantdubey07}} \\
+LinkedIn://  \href{in.linkedin.com/in/prashantdubey07}{\custombold{prashantdubey07}} \\
+Twitter://  \href{https://twitter.com/prashantdubey07}{\custombold{@prashantdubey07}} \\
+Quora://  \href{http://www.quora.com/Prashant-Dubey-28}{\custombold{Prashant-Dubey-28}} \\
+StackOverFlow://  \href{http://stackoverflow.com/users/2987706/prashant}{\custombold{prashant}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Data Structures \\
+Analysis Design and Algorithms \\
+Operating Systems \\
+Database Management Systems \\
+Compiler Optimization \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+%\location{Over 5000 lines:}
+C \textbullet{}   C++ \textbullet{} Java \textbullet{} J2EE \\
+JavaScript \textbullet{} \LaTeX\ \\ 
+JSP \textbullet{} Servlet \textbullet{} CSS \textbullet{} XML\\
+HTML \textbullet{} Unix \textbullet{} Shell Script \\
+%\location{Over 1000 lines:}
+\sectionsep
+\subsection{Databases}
+MySQL \textbullet{}   Oracle \\
+\sectionsep 
+
+\subsection{Frameworks}
+spring \textbullet{} struts
+\sectionsep
+\subsection{Operating Systems}
+GNU/Linux \textbullet{}   Unix 
+\sectionsep
+
+\subsection{Others}
+Log4j \textbullet{}ehCache \textbullet{}CI \textbullet{}ANT\\
+Apache Tomcat \textbullet{} Jboss \textbullet{} SOAP
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Huawei Technology}
+\descript{| Software Development }
+\location{ Jul 2011 – till date | BANGALORE, Karnataka}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Involved in development of  VPN (Virtual Private Network) and MNTS GUI Portal.\item Having Good Exposure in Development, Implementation and Maintenance of Products.\item IT experience in various phases of software development including Developing and Unit Test Plan, Unit Testing, and Module Integration System Test and implementation.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{iPortal : Belgacom}
+\location{May 2015 – Till Date | Huawei, Bangalore}
+\begin{tightemize}\item Working in GUI and Platform development.\item New Version of VPN and MNTS products ported to Same platform.\item Added export and import feature.\item Requirement analysis from the client and developing the same. \item Involved in Unit Testing/Module integration System Testing ,Coding and Debugging
+
+\end{tightemize} 
+
+\sectionsep
+
+
+\runsubsection{MNTS : Telecom Egypt}
+\location{Apr 2013 – Nov 2013 | Huawei, Bangalore}
+\runsubsection{MNTS : morocco}
+\location{Nov 2014 – Mar 2015 | Huawei, Bangalore} 
+\begin{tightemize}\item MNTS is Mobile Number Translation service, it’s basically Intelligent Network service deployed for the enterprise where the enterprise can provide less charging or free charging for end customer. MNTS is a collection of services that are provided to support Enterprises to charge user specifically to area, time, day, special number or on the specified criteria.\item Working in NGIN platform for developing various MNTS products and using tools like MyEclipse, I2000 etc.\item Identifying, reporting, debugging software bugs. Gathering customer requirements for customization. \item Requirement analysis from the client and developing the same 
+\end{tightemize} 
+\sectionsep
+
+
+\runsubsection{VPN : Chile-Nextel}
+\location{sept 2012 – Mar 2013 | Huawei, Bangalore}
+\runsubsection{VPN : Chile-Claro}
+\location{Dec 2013 – oct 2014 | Huawei, Bangalore} 
+\begin{tightemize}\item Developed GUI using Java, JSP , JavaScript and Spring Framework \item Working in NGIN platform for developing various VPN products and using tools like MyEclipse, I2000 etc.\item Using Java language and Oracle as database to develop VPN project and deploying in NGIN platform with CAP (Camel Application Protocol) support network. \item Requirement analysis from the client and developing the same.\item Involved in Unit Testing/Module integration System Testing.\item Coding and Debugging.\item Involved in Preparation of Story Cards and other documents.
+\end{tightemize} 
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Scholarship and Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Scholarship and Previous offers} 
+\begin{tabular}{rll}
+2015	     & Got ACA(Advance Coding Analyst) from Huawei Technology\\
+2012	     & Got 90 percentile in eLitmus Test\\
+2012	     & Ranked in top 2\% in GATE-2012 among 156,780 students\\
+2011	     & Ranked in top 5\% in GATE-2011 among 156,780 students\\
+\end{tabular}
+\sectionsep
+
+
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
